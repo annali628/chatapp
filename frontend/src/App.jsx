@@ -6,7 +6,7 @@ import io from "socket.io-client";
 // this sends a 'connection' request to your socket io server
 // you sent a connection request
 // but your backendd is not listening to any connection requests yet
-const socket = io("http://localhost:3000");
+const socket = io("https://chatappbyannabackend.onrender.com");
 
 function App() {
   const [message, setMessage] = useState("");

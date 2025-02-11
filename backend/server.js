@@ -10,7 +10,8 @@ const server = app.listen(3000);
 
 const io = socketio(server, {
   cors: {
-    origin: "http://localhost:5173",
+    // should use environment variables but for now we will hard code it
+    origin: "https://chatappbyanna.onrender.com",
   },
 });
 
